@@ -1,4 +1,4 @@
-FROM tomcat:9.0-jre21-alpine
+FROM tomcat
 COPY /target/*.war /usr/local/tomcat/webapps/app.war
 RUN rm -rf /usr/local/tomcat/webapps/*
 EXPOSE 8081
