@@ -39,3 +39,20 @@
     </plugins>
   </build>
 </project>
+
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>4.0.0.4121</version>
+        </plugin>
+    </plugins>
+</build>
+
+<properties>
+    <sonar.host.url>http://54.201.212.239:9000</sonar.host.url>
+    <sonar.projectKey>your-project-key</sonar.projectKey>
+    <sonar.login>your-generated-token</sonar.login>
+</properties>
