@@ -27,32 +27,30 @@
   
   <build>
     <plugins>
+      <!-- Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
+        <version>3.11.0</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>   <!-- upgraded from 1.7 -->
+          <target>1.8</target>
         </configuration>
+      </plugin>
+
+      <!-- SonarQube Plugin -->
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>4.0.0.4121</version>
       </plugin>
     </plugins>
   </build>
-</project>
 
-
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>4.0.0.4121</version>
-        </plugin>
-    </plugins>
-</build>
-
-<properties>
+  <properties>
     <sonar.host.url>http://54.201.212.239:9000</sonar.host.url>
     <sonar.projectKey>your-project-key</sonar.projectKey>
     <sonar.login>your-generated-token</sonar.login>
-</properties>
+  </properties>
+
+</project>
