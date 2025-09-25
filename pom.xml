@@ -50,7 +50,7 @@
   <properties>
     <sonar.host.url>http://54.201.212.239:9000</sonar.host.url>
     <sonar.projectKey>your-project-key</sonar.projectKey>
-    <sonar.login>your-generated-token</sonar.login>
+    <sonar.login>ad57bfa0dc35eb558a3ab6a017317edcbe006f55</sonar.login>
   </properties>
 
 </project>
